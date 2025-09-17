@@ -32,7 +32,7 @@ The ADF statistic itself is a negative number. The more negative it is, the stro
 * Rule: If the ADF statistic is more negative than the critical value, you reject the null hypothesis.
 * Interpretation: In our example, the ADF statistic of -3.25 is more negative than the 5% critical value of -2.87. This leads us to the same conclusion: we can reject the null hypothesis and confirm that the time series is stationary.
 
-What the Results Mean for Your Trading
+3. What the Results Mean for Your Trading
 * Stationary Series (Reject H0​): This time series is likely to fluctuate around a long-term average. It is a good candidate for a mean reversion strategy. For example, you could sell when the price is far above its moving average and buy when it's far below.
 * Non-Stationary Series (Fail to Reject H0​): This time series likely follows a random walk, with no tendency to revert to a mean. It is a good candidate for a trend following strategy, as prices are more likely to continue in their current direction than reverse.
 
