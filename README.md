@@ -41,8 +41,7 @@ By using the ADF test, you're moving from a subjective "this pair looks like it'
 ## Multi-Pair Test
 By running the ADF-test concurrently on several forex pairs and saving the results into a list, we can rank them and then decide which pairs have the most mean-reverting tendency and which have the least.
 
-* Set the pair List and the time range to test on
-* 
+Set the pair List and the time range to test on
 ```Python
 # Define the list of forex pairs to test
 # The '=X' suffix is necessary for forex data on Yahoo Finance
@@ -56,8 +55,7 @@ start_date = '2015-01-01'
 end_date = '2025-01-01'
 ```
 
-* Output Example:
-* 
+Output Example:
 ```Bash
 --- Ranked Results (Most Mean-Reverting to Least) ---
 Pair         ADF Statistic   p-value   
