@@ -1,6 +1,8 @@
 # Multi-Pair Augmented Dickey-Fuller Test
 Perform ADF-Test (stationarity test) on several forex pairs at once and rank the results from the most mean-reversion tendency to least
 
+---
+
 ## Testing a Currency Pair for Stationarity
 Let's imagine you have a historical time series of daily closing prices for EUR/USD (EURUSD=X), and you want to test it for stationarity.
 
@@ -75,3 +77,7 @@ USDJPY=X     0.0834          0.9649
 CHFJPY=X     0.4417          0.9830    
 GC=F         0.5184          0.9854
 ```
+
+---
+
+Back to [Index](https://github.com/handiko/handiko/blob/master/README.md)
