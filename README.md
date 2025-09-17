@@ -36,10 +36,24 @@ What the Results Mean for Your Trading
 
 By using the ADF test, you're moving from a subjective "this pair looks like it's ranging" to an objective, data-driven "this pair's statistical properties indicate it's suitable for mean reversion."
 
-## Multi-Pair Results
+## Multi-Pair Test
 By running the ADF-test concurrently on several forex pairs and saving the results into a list, we can rank them and then decide which pairs have the most mean-reverting tendency and which have the least.
 
-Output Example:
+* Set the pair List and the time range to test on
+```Python
+# Define the list of forex pairs to test
+# The '=X' suffix is necessary for forex data on Yahoo Finance
+forex_pairs = ['AUDUSD=X', 'EURGBP=X', 'NZDUSD=X', 'USDCHF=X',
+               'AUDJPY=X', 'CADJPY=X', 'EURUSD=X', 'GBPUSD=X',
+               'NZDJPY=X', 'USDCAD=X', 'CHFJPY=X', 'EURJPY=X',
+               'EURNZD=X', 'GBPJPY=X', 'USDJPY=X', 'GC=F']
+
+# Define the time period for the data
+start_date = '2015-01-01'
+end_date = '2025-01-01'
+```
+
+* Output Example:
 ```Bash
 --- Ranked Results (Most Mean-Reverting to Least) ---
 Pair         ADF Statistic   p-value   
