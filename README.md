@@ -35,3 +35,29 @@ What the Results Mean for Your Trading
 * Non-Stationary Series (Fail to Reject H0​): This time series likely follows a random walk, with no tendency to revert to a mean. It is a good candidate for a trend following strategy, as prices are more likely to continue in their current direction than reverse.
 
 By using the ADF test, you're moving from a subjective "this pair looks like it's ranging" to an objective, data-driven "this pair's statistical properties indicate it's suitable for mean reversion."
+
+## Multi-Pair Results
+By running the ADF-test concurrently on several forex pairs and saving the results into a list, we can rank them and then decide which pairs have the most mean-reverting tendency and which have the least.
+
+Output Example:
+```Bash
+--- Ranked Results (Most Mean-Reverting to Least) ---
+Pair         ADF Statistic   p-value   
+-------------------------------------
+USDCAD=X     -3.5570         0.0066    
+USDCHF=X     -3.3585         0.0125    
+GBPUSD=X     -2.8360         0.0533    
+EURUSD=X     -2.7649         0.0635    
+EURNZD=X     -2.6920         0.0754    
+AUDUSD=X     -2.5885         0.0954    
+NZDUSD=X     -2.5133         0.1123    
+NZDJPY=X     -2.2632         0.1841    
+EURGBP=X     -2.1751         0.2154    
+AUDJPY=X     -1.8893         0.3371    
+CADJPY=X     -1.1301         0.7029    
+GBPJPY=X     -1.0640         0.7292    
+EURJPY=X     -0.6527         0.8586    
+USDJPY=X     0.0834          0.9649    
+CHFJPY=X     0.4417          0.9830    
+GC=F         0.5184          0.9854
+```
