@@ -80,4 +80,4 @@ GC=F         0.5184          0.9854
 
 ---
 
-Back to [Index](https://github.com/handiko/handiko/blob/master/README.md)
+Back to [Index](https://github.com/handiko/handiko/blob/master/Index.md)
